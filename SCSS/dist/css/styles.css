@@ -1,1 +1,1 @@
-a,button{font-family:inherit;border-radius:7px;font-size:12px;text-transform:uppercase;padding:5px 10px;background-color:peru;color:#fff;font-weight:500}a{text-decoration:none}button{border:0}
+.logInOut button,.signUp{font-family:inherit;border-radius:7px;font-size:12px;text-transform:uppercase;padding:5px 10px;margin:5px;background-color:#fff;color:#000;font-weight:500;transition:.5s}.header,.name{font-size:30px;color:#00f}.name{font-weight:700}.logInOut button:hover{background-color:#00f}.signUp:hover{background-color:coral}
