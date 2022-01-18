@@ -1,43 +1,19 @@
-//mixin
-@mixin header($weight: null) {
-  font-size: 30px;
-  font-weight: $weight;
-  color: blue;
-}
+@import "_mixins";
 
-//extend, 함수적 기능 사용 불가(매개변수, 조건문, ...)
-%button-format {
-  font-family: inherit;
-  border-radius: 7px;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: white;
-  color: black;
-  font-weight: 500;
-  transition: 0.5s;
-}
-
-.header {
-  @include header(); //mixin
-}
-
-.name {
-  @include header(bold);
-}
-
-.logInOut button {
-  @extend %button-format; //extend
-  &:hover {
-    //nesting
-    background-color: blue;
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: blue;
   }
-}
-
-.signUp {
-  @extend %button-format;
-  &:hover {
-    background-color: coral;
+  @include responsive("iphone-l") {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
+  @include responsive("tablet-l") {
+    font-size: 120px;
+    font-weight: bold;
   }
 }
