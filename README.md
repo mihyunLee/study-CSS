@@ -1,6 +1,6 @@
 # study-CSS
 
-📂Folder
+### 📂Folder
 - SCSS
   - SCSS 문법 공부
 - Clone_Website
